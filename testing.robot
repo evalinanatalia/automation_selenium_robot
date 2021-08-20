@@ -9,7 +9,8 @@ ${first_name}		//*[@id="basicBootstrapForm"]/div[1]/div[1]/input
 ${last_name}		//*[@id="basicBootstrapForm"]/div[1]/div[2]/input
 ${address}		//*[@id="basicBootstrapForm"]/div[2]/div/textarea
 ${email}		//*[@id="eid"]/input
-${phone}		//*[@id="basicBootstrapForm"]/div[4]/div/input				
+${phone}		//*[@id="basicBootstrapForm"]/div[4]/div/input	
+${browse}		imagesrc				
 
 
 *** Test Cases ***
@@ -29,6 +30,9 @@ Launch Browser
 	Input Text	${address}	Jl G1 Slipi, Jakarta Barat
 	Input Text	${email}	testing@gmail.com
 	Input Text	${phone}	081297549740
+	
+	#Upload File
+	Choose File  ${browse}	D://eva/cv/foto-profil-wa-30bcd.jpg
 	
 	Sleep	3
 	
